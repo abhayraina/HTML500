@@ -1,0 +1,74 @@
+/* CSS Cheat Sheet */
+
+/* 
+	This is a comment in CSS...
+	...it can be spread over multiple lines.
+*/
+
+/*
+	Definitions:
+		"Selector":
+			The HTML elements to be styled
+
+		"Property":
+			The specific characteristics of the element to be changed, such as the color, border, or font-size.
+
+		"Value":
+			What the property will be set to, such as setting color to red or font-size to 14px.
+
+		Example:
+			selector {
+				property: value;
+			}
+
+			such as:
+
+			p {
+				font-size: 14px;
+			}
+
+		"Parent":
+			The element that another element is nested within, such as <p>Click this <a>Link</a><p>.(<p> is the parent of <a>.)
+
+		"Child":
+			An element that is nested within another element. In the above example, <a> is a child of <p>.
+
+		"Direct Child":
+			An element that is positioned at the first descendant level within a parent. For example:;
+
+			<div>
+				<p>
+					<img>
+				</p>
+			</div>
+
+			<p> is a direct child of <div>, and <img> a direct child of <p>, but <img> is not a direct child of <div> as it is nested within div at it's second level
+*/
+
+h1 { /* Selects all h1 elements. */
+	color: red; /* Changes the text color of all selected elements to red. */
+}
+
+p span { /* Selects all span elements that are the children of a paragraph element. */
+	font-size: 14px; /* px is the "pixel" unit of measurement. */
+}
+
+body > div { /* Selects all divs that are *direct* children of the body tag, meaning they are in the first nesting level of the body element.  */
+
+}
+
+#idName { /* Selects the specific element that has its id attribute set to idName. */
+
+}
+
+.className { /* Selects all elements which have their class attribute set to className. */
+
+}
+
+p.className { /* Selects all p elements with a class name of className. */
+
+}
+
+h2, h3 { /* Selects both h2 and h3 elements. */
+
+}

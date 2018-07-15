@@ -1,0 +1,79 @@
+<!-- 
+HTML Cheat Sheet
+-->
+
+<!--
+This is a comment. 
+It can be written over multiple lines. 
+-->
+
+<!--
+Definitions:
+
+	Element:
+		The units that make up an HTML page.
+
+	Tag:
+		The special pieces of text that surround the content of an element.
+
+	Nesting:
+		The act of placing elements inside of other elements.
+
+	Whitespace:
+		Whitespace includes spaces, tabs, and new lines. Anything beyond a single space is ignored by HTML. Thus, each word in an element could be written over separate lines, but they will be displayed with just a single space between them. 
+
+	Attributes:
+		Additional information assigned to the element. Examples: the URL location of an image, or a named reference to the element. Example: <a id="myLink" href="http://example.com">
+-->
+
+<!DOCTYPE html> <!-- Tells the browser that this an HTML file. -->
+<html> <!-- Begins the base of HTML document. The HTML element contains all of our page's HTML. -->
+	<head> <!-- The head element contains meta-information that is not displayed on the page itself, such as the page's title and references to external files. -->
+		<title> <!-- The title of the page as displayed in the top bar of the browser. -->
+			Page Title
+		</title> <!-- This is a closing tag. It tells the browser that this structural piece of HTML code ends here. -->
+		<link rel="stylesheet" href="style.css" type="text/css"> <!-- links in and adds css stylesheet information from the file specified in href -->
+	
+	</head> <!-- This is another closing tag. This tag closes the entire head element. -->
+
+	<body> <!-- The body element is what contains all the HTML that web visitors actually see. -->
+
+		<div> <!-- The DIV element will act as our container to separate sections of the page. -->
+			
+			<header> <!-- contains header content. Used for both page headers and section headers -->
+				<h1>Heading Text</h1> <!-- Heading text, which the browser displays as large and bold. -->
+				<h2>Subtitle</h2> <!-- ...heading tags range from h1 to h6, with h1 being at the largest font-size. -->
+			</header>
+
+			<section> <!-- contains content for a main section of a page, more specific than a div -->
+				<p> <!-- The opening tag for a paragraph element. We oftentimes surround pure pieces of text in paragraph elements. -->
+					Paragraph text, such as news content.
+					<br /> <!-- Inserts a blank line. -->
+					Sometimes you want to <span>highlight</span> <!-- segments specific words to allow for them to be customed styled later --> or <q>quote specific parts of a sentence</q>.  <!-- puts these words inside quotes -->
+				</p>
+
+				<ul> <!-- An 'unordered list': Bullet-point items. -->
+					<li>Apples</li> <!-- Each list item is encased in an <li> element. -->
+					<li>Bananas</li>
+				</ul>
+
+				<ol> <!-- An 'ordered list': Bullet-point items with prefixed numbers. -->
+					<li class="list-item">Step 1</li> <!-- the class attribute gives an anchor in CSS to all elements sharing this class -->
+					<li class="list-item">Step 2</li>
+				</ol>
+			</section>
+		</div>
+
+		<div id="image-container"> <!-- the id attribute gives a unique anchor to this single element in CSS --> 
+			<img src="images/example.jpg"> <!-- Displays an image that is located at the url provided with the 'src' (short for source) attribute. This element does not require a closing tag since it has no content within it. --> 
+			<a href="http://example.com/link"> <!-- A link to another page on the same site, or, as in this example, to another website entirely. We put the URL as the value of the HREF attribute. -->
+				Click here!
+			</a>
+		</div>
+
+		<footer> <!-- contains footer content. Used for both page footers and section footers -->
+			Legal information and page navigation.
+		</footer>
+
+</body>
+</html>
